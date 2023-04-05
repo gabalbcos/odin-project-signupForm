@@ -9,17 +9,37 @@
     <title>Imperial Army Enlistment Form</title>
 </head>
 <body>
-    <header>
-       
-            <div class="logo-container">
-                <img class='logo' src="./logo.png" alt="empire symbol">
-            </div>
-            <div class="credits"></div>
-    </header>
-    <main>
-    </main>
-    <footer>
+    <div class="row">
+        <header class="column">
         
-    </footer>
+                <div class="logo-container">
+                    <h1><a href=""><img class='logo' src="./logo.png" alt="empire symbol"></a></h1>
+                </div>
+                <div class="credits"><p class="credit-text">Photo by</p></div>
+        </header>
+        <main class="column">
+            <p class='motivational'>The Empire represent the best of humanity - courage, determination, discipline and a willingness to fight to establish order throughout the galaxy.</p>
+            <h2>Rebellions are built on hope, but an Empire is built on action.</h2>
+            <form action="galactic-database.com/soldiers" method="post">
+                <fieldset class="first-group">
+                    <legend>Enlist Now!</legend>
+                    <label for="first-name">First name:</label><br>
+                    <input type="text" id="firstname" name="first-name"><br>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="e-mail" name="email"><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password"><br>
+                    <label for="last-name">Last name:</label><br>
+                    <input type="text" id="last-name" name="last-name"><br>
+                    <label for="phone-number">Phone number:</label><br>
+                    <input type="tel" id="phone-number" name="phone-number"><br>
+                    <label for="confirm-password">Confirm Password:</label><br>
+                    <input type="password" id="confirm-password" name="confirm-password">
+                </fieldset>
+                    <button type="submit">Join us!</button>
+            </form>
+        </main>
+    </div>
+
 </body>
 </html>
