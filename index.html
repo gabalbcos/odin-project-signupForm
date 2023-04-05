@@ -6,37 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Orbitron:wght@400;500&family=Pacifico&family=Poller+One&family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Imperial Army Enlistment Form</title>
 </head>
 <body>
     <div class="row">
-        <header class="column">
-        
+        <header class="column header">
                 <div class="logo-container">
-                    <h1><a href=""><img class='logo' src="./logo.png" alt="empire symbol"></a></h1>
+                    <h1 class="logo-color"><a href=""><img class='logo' src="./logo.png" alt="empire symbol"></a></h1>
                 </div>
-                <div class="credits"><p class="credit-text">Photo by</p></div>
+                <div class="credits"><p class="credits-text">Photo by</p></div>
         </header>
-        <main class="column">
+        <main class="column main">
+            <div class="motivational-section">
             <p class='motivational'>The Empire represent the best of humanity - courage, determination, discipline and a willingness to fight to establish order throughout the galaxy.</p>
-            <h2>Rebellions are built on hope, but an Empire is built on action.</h2>
-            <form action="galactic-database.com/soldiers" method="post">
+            <h2 class="motivational">Rebellions are built on hope, but an Empire is built on action.</h2>
+            </div>       
+            <form action="galactic-database.com/soldiers" method="post" class="form-section">
                 <fieldset class="first-group">
-                    <legend>Enlist Now!</legend>
-                    <label for="first-name">First name:</label><br>
-                    <input type="text" id="firstname" name="first-name"><br>
-                    <label for="email">E-mail</label><br>
-                    <input type="email" id="e-mail" name="email"><br>
-                    <label for="password">Password:</label><br>
-                    <input type="password" id="password" name="password"><br>
-                    <label for="last-name">Last name:</label><br>
-                    <input type="text" id="last-name" name="last-name"><br>
-                    <label for="phone-number">Phone number:</label><br>
-                    <input type="tel" id="phone-number" name="phone-number"><br>
-                    <label for="confirm-password">Confirm Password:</label><br>
-                    <input type="password" id="confirm-password" name="confirm-password">
+                    <p class="legend-div">Enlist Now!</p>
+                    <div class="div1 flex-c">
+                        <label class="form-label" for="first-name">First name:</label>
+                        <input type="text" id="firstname" name="first-name">
+                    </div>
+                    <div class="div2 flex-c">
+                        <label class="form-label" for="email">E-mail</label>
+                        <input type="email" id="e-mail" name="email">
+                    </div>
+                    <div class="div3 flex-c">
+                        <label class="form-label" for="password">Password:</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="div4 flex-c">
+                        <label class="form-label" for="last-name">Last name:</label>
+                        <input type="text" id="last-name" name="last-name">
+                        
+                    </div>
+                    <div class="div5 flex-c">
+                        <label class="form-label" for="phone-number">Phone number:</label>
+                        <input type="tel" id="phone-number" name="phone-number">
+                    </div>
+                    <div class="div6 flex-c">
+                        <label class="form-label" for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password">
+                    </div>
                 </fieldset>
-                    <button type="submit">Join us!</button>
+                    <button class="submit-button" type="submit">Join us!</button>
+                    <p class="sign-in">Already enlisted? <a href="http://">Sign In</a></p>
             </form>
         </main>
     </div>
